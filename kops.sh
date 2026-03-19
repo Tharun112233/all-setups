@@ -15,4 +15,4 @@ export KOPS_STATE_STORE=s3://tharunchand.k8s
 kops create cluster --name tharun.k8s.local --zones us-east-1a,us-east-1b --master-count=1 --master-size t2.medium --master-volume-size 25 --node-count=2 --node-size t2.medium --node-volume-size 25
 kops update cluster --name tharun.k8s.local --yes --admin
 
-kop delete cluster tharun.k8s.local --yes
+kops delete cluster tharun.k8s.local --yes
